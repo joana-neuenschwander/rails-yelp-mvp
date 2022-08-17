@@ -7,8 +7,7 @@
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
     <li class="list-group-item">
-      <%= review.content %>
-      <%= review.rating %>
+      <p><%= review.content %> - <%= review.rating %> stars</p>
     </li>
   <% end %>
 </ul>
